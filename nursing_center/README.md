@@ -96,7 +96,8 @@ nursing_center/
 │   ├── previewTemplate.txt
 │   └── record.txt
 │
-└── NEUEDU.iml                 # IntelliJ IDEA 项目文件
+├── .gitignore                 # Git 忽略规则
+└── README.md                  # 项目说明
 ```
 
 ---

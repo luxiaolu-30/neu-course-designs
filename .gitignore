@@ -1,4 +1,6 @@
-# ===== AI 助手 / Agent 工具配置（机器特定，不应提交） =====
+# ============================================================
+# AI 助手 / Agent 工具配置（机器特定，不提交）
+# ============================================================
 .claude/
 .codex/
 .qoder/
@@ -9,9 +11,12 @@
 .github/copilot/
 openspec/
 
-# ===== IDE / 编辑器 =====
+# ============================================================
+# IDE / 编辑器
+# ============================================================
 .idea/
 .vscode/
+.vs/
 *.iml
 *.iws
 *.ipr
@@ -22,30 +27,39 @@ openspec/
 .classpath
 .settings/
 .nb-gradle/
+*.suo
+*.user
+*.vspscc
+*.vssscc
+*.rsuser
+*.sln.docstates
 
-# ===== 操作系统 =====
+# ============================================================
+# 操作系统
+# ============================================================
 .DS_Store
 Thumbs.db
 desktop.ini
 ehthumbs.db
 $RECYCLE.BIN/
 
-# ===== 通用构建产物 / 日志 =====
+# ============================================================
+# 通用：日志、临时、备份、压缩包
+# ============================================================
 *.log
 *.tmp
 *.bak
-*.cache
 hs_err_pid*
 replay_pid*
-
-# ===== 压缩包 =====
 *.zip
 *.rar
 *.7z
 *.tar.gz
 *.tgz
 
-# ===== Java（覆盖 nursing_center）=====
+# ============================================================
+# Java（nursing_center）
+# ============================================================
 *.class
 *.jar
 *.war
@@ -58,7 +72,9 @@ build/
 /dist/
 /nbdist/
 
-# ===== Qt / C++（覆盖 sniffer-arp）=====
+# ============================================================
+# Qt / C++（sniffer-arp）
+# ============================================================
 *.o
 *.obj
 *.exe
@@ -70,10 +86,52 @@ Makefile*
 *.qm
 *.qdb
 build-*/
-debug/
-release/
 *.pro.user
 *.pro.user.*
+
+# ============================================================
+# Visual Studio / MFC（MFC_CS）
+# ============================================================
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.tlog
+*.idb
+*.ilk
+*.pdb
+*.ipdb
+*.iobj
+*.aps
+*.sdf
+*.opensdf
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+*.lastbuildstate
+*.unsuccessfulbuild
+*.recipe
+*.Build.CppClean.log
+*.cache
+*.pch
+ipch/
+*.vskel
+*.vcxproj.user
+*.vcxproj.filters.user
+
+# ============================================================
+# 编译产物 / 共享库（跨语言共用）
+# ============================================================
 *.so
 *.so.*
 *.dylib
@@ -81,11 +139,12 @@ release/
 *.a
 *.lib
 
-# ===== Python / Jupyter（覆盖 machine_learn-main）=====
+# ============================================================
+# Python / Jupyter（machine_learn）
+# ============================================================
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
 .Python
 .venv/
 venv/
@@ -103,7 +162,6 @@ htmlcov/
 *.egg
 *.egg-info/
 .eggs/
-dist/
 develop-eggs/
 sdist/
 wheels/
@@ -114,14 +172,23 @@ pip-delete-this-directory.txt
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# Jupyter Notebook 临时文件
-.ipynb_checkpoints/
-*/.ipynb_checkpoints/*
-
-# 数据集 / 模型权重（按需取消注释；默认忽略大文件）
+# ============================================================
+# 大文件（按需取消注释）
+# ============================================================
 # *.h5
 # *.pkl
 # *.pt
 # *.pth
 # *.ckpt
 # *.safetensors
+
+# ============================================================
+# 运行时输入/输出示例（按需取消注释）
+# MFC_CS 中的密码学示例文件
+# ============================================================
+# prime.txt
+# autoplain.txt
+# cpc_infile.txt
+# cpc_outfile.txt
+# md5test.txt
+# RC4.txt
