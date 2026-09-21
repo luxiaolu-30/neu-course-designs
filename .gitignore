@@ -1,0 +1,127 @@
+# ===== AI 助手 / Agent 工具配置（机器特定，不应提交） =====
+.claude/
+.codex/
+.qoder/
+.qwen/
+.trae/
+.cursor/
+.augment/
+.github/copilot/
+openspec/
+
+# ===== IDE / 编辑器 =====
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+.nb-gradle/
+
+# ===== 操作系统 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# ===== 通用构建产物 / 日志 =====
+*.log
+*.tmp
+*.bak
+*.cache
+hs_err_pid*
+replay_pid*
+
+# ===== 压缩包 =====
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tgz
+
+# ===== Java（覆盖 nursing_center）=====
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+out/
+build/
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+
+# ===== Qt / C++（覆盖 sniffer-arp）=====
+*.o
+*.obj
+*.exe
+moc_*.cpp
+moc_*.h
+ui_*.h
+qrc_*.cpp
+Makefile*
+*.qm
+*.qdb
+build-*/
+debug/
+release/
+*.pro.user
+*.pro.user.*
+*.so
+*.so.*
+*.dylib
+*.dll
+*.a
+*.lib
+
+# ===== Python / Jupyter（覆盖 machine_learn-main）=====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+*.egg
+*.egg-info/
+.eggs/
+dist/
+develop-eggs/
+sdist/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+pip-log.txt
+pip-delete-this-directory.txt
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Jupyter Notebook 临时文件
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# 数据集 / 模型权重（按需取消注释；默认忽略大文件）
+# *.h5
+# *.pkl
+# *.pt
+# *.pth
+# *.ckpt
+# *.safetensors
